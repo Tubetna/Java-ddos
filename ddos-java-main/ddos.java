@@ -134,7 +134,7 @@ public class Dos implements Runnable {
         System.out.println("Kiểm tra kết nối (ssl)");
         URL obj = new URL(url);
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
-        con.setRequestMethod("Lấy:TUBETNA");
+        con.setRequestMethod("GET:");
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
